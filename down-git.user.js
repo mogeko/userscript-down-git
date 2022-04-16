@@ -5,7 +5,9 @@
 // @description  Create GitHub Resource Download Link.
 // @author       mogeko
 // @match        https://github.com/*/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
+// @match        https://github.com/*/*/tree/*/*
+// @exclude      https://github.com/*/*/blob/*/*
+// @icon         https://github.githubassets.com/favicons/favicon.png
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==
@@ -39,7 +41,7 @@ const getButton = (url_node, downloader) => {
   div.className = "mr-3 flex-shrink-0";
   const a = document.createElement("a");
   a.href = downloader(url_node.href);
-  a.title = `Download ${url_node.innerHTML}.zip`;
+  a.title = `Download ${url_node.innerHTML}`;
   a.innerHTML = svg_icon;
   div.appendChild(a);
   return div;
