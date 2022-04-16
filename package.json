@@ -1,0 +1,39 @@
+{
+  "name": "down-git.user.js",
+  "version": "0.0.1",
+  "description": "Create GitHub Resource Download Link.",
+  "main": "down-git.user.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "eslint --fix --ext .js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mogeko/userscript-down-git.git"
+  },
+  "keywords": [
+    "user-script"
+  ],
+  "author": "mogeko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mogeko/userscript-down-git/issues"
+  },
+  "homepage": "https://github.com/mogeko/userscript-down-git#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "plugins": ["prettier"],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  }
+}
